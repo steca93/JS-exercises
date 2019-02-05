@@ -50,32 +50,31 @@ let touch = () => {
     cubes.forEach((cube) => {
         cube.addEventListener("click", () => {
             cube.firstChild.classList.toggle('show');
-            watch(cubes);
+            watch();
         });
     })
 }
 
-let watch = (cubes) => {
-    let correct = [];
-    cubes.forEach((cube) => {
-        if (cube.firstChild.classList.length > 1) {
-            correct.push(cube.firstChild);
-        }
 
-    })
-    if (correct.length === 2) {
-        if (correct[0].textContent === correct[1].textContent) {
-            correct.forEach((item) => {
-                
-            });
-            correct = [];
-        } else {
-            correct.forEach((item) => {
-                setTimeout(() => {
-                    item.classList.toggle("show");
-                }, 500);
+let watch = () => {
+    let cubes = document.querySelectorAll(".cube");
+    let success = [];
+    let temp = [];
+    cubes.forEach((cube) => {
+        if (cube.firstChild.classList.length === 2) {
+           temp.push(cube.firstChild);
+        } 
+    });
+    if (temp.length === 2) {
+        console.log(1);
+        if (temp[0].textContent === temp[1].textContent) {
+            temp.forEach((item) => {
+                item.parentNode.classList.toggle("correct");
             })
-            correct = [];
+        } else {
+            cubes.forEach((cube) => {
+                cube.firstChild.classList.toggle("show");
+            })
         }
     }
 }
@@ -83,4 +82,5 @@ let watch = (cubes) => {
 // Starting methods
 setupCubes();
 touch();
+watch();
 // startTimer();
