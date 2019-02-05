@@ -1,0 +1,178 @@
+body {
+    width: 100%;
+    height: 800px;
+    font-family: '.SFNSDisplay-Regular', sans-serif;
+}
+
+.leftPanel {
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 100%;
+    float: left;
+    /* background-color: #f2f2f2; */
+}
+.textAdd {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 60px;
+    /* background-color: red; */
+}
+.textAdd > label {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 20px;
+    font-size: 16px;
+    top: 5px;
+}
+#razlog {
+    position: relative;
+    display: block;
+    width: 97%;
+    height: 30px;
+    font-size: 16px;
+    top: 10px;
+    padding-left: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid #cccccc;
+    text-align: center;
+    -webkit-appearance: none;
+    outline: none;
+}
+.addButton {
+    position: relative;
+    display: block;
+    /* top: 15px; */
+    width: 100%;
+    height: 40px;
+    background-color: red;
+}
+.add {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #1a8cff;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    border: 1px solid #1a8cff;
+}
+.add:active {
+    background-color: white;
+    color: #1a8cff;
+}
+.add:hover {
+    cursor: pointer;
+}
+.mainContainer {
+    position: relative;
+    display: block;
+    float: left;
+    width: 700px;
+    height: 100%;
+}
+.tile {
+    position: relative;
+    display: block;
+    margin-left: 15px;
+    margin-top: 10px;
+    /* float: left; */
+    width: 300px;
+    height: 150px;
+    background-color: #d1e0e0;
+    border: 1px solid #b3cbcb;
+    outline: #b3cbcb 1px solid;
+}
+.tileHeader {
+    position: relative;
+    /* display: table; */
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+.tileDesc {
+    position: relative;
+    /* display: table; */
+    width: 100%;
+    height: 70%;
+    text-align: center;
+    font-size: 16px;
+}
+.error {
+    position: relative;
+    top: 15px;
+    width: 100%;
+    height: 65px;
+    /* background-color: red; */
+}
+.errMsg {
+    position: relative;
+    visibility: hidden;
+    width: 100%;
+    height: 69%;
+    background-color: #ffc2b3;
+    outline: #ff5c33 1px solid;
+    color: #ff3300;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 20px;
+}
+.delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: red;
+    color:white;
+    font-weight: bold;
+    border: none;
+    outline: red 1px solid;
+}
+.delete:hover {
+    cursor: pointer;
+}
+.delete:active {
+    background-color: white;
+    color: red;
+}
+.lock {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background-color: #34cb34;
+    outline: #34cb34 1px solid;
+}
+.lock:hover {
+    cursor: pointer;
+}
+.lock:active {
+    background-color: white;
+    color: #34cb34;
+}
+.locked {
+    position: absolute;
+    width: 80px;
+    height: 25px;
+    background-color: #ffcc80;
+    text-align: center;
+    padding-top: 5px;
+    bottom: 5px;
+    left: 110px;
+    color:#cc7a00;
+    font-weight: bold;
+    outline: #ffa31a 3px solid;
+    border: none;
+    visibility: hidden;
+}
+.display {
+    visibility: visible;
+}

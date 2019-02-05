@@ -1,0 +1,85 @@
+body {
+    background-color: #f2f2f2;
+}
+.mainContainer {
+    width: 600px;
+    height: 700px;
+    /* background-color: yellow; */
+    margin: auto;
+}
+.clock {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+}
+.clockInterface {
+    position: relative;
+    top: 12px;
+    width: 200px;
+    height: 75px;
+    margin: auto;
+    /* background-color: #dbd3d3; */
+    font-size: 65px;
+    font-weight: bold;
+    text-align: center;
+}
+.start {
+    position: absolute;
+    width: 140px;
+    height: 60px;
+    left: 15px;
+    top: 20px;
+    /* background-color: blue; */
+}
+.btnStart {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 22px;
+}
+
+.btnStart:hover {
+    cursor: pointer;
+    /* box-shadow: 1.5px 1.5px black; */
+}
+
+.btnStart:active {
+    background-color: white;
+    color:blue;
+    outline: blue 2px solid;
+}
+.cube {
+    position: relative;
+    top: -2px;
+    float: left;
+    width: 130px;
+    height: 100px;
+    margin-left: 16px;
+    margin-top: 16px;
+    background-color: #99ff99;
+    border: 1px solid black;
+}
+.cube:active {
+    background-color: white;
+    color: black;
+}
+.number {
+    position: relative;
+    top: 23px;
+    margin: auto;
+    height: 48%;
+    width: 50%;
+    /* background-color: red; */
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 2px;
+    display: none;
+}
+.show {
+    display: block;
+}
